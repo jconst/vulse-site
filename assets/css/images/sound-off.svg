@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>sound-off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="sound-off" stroke="#fff">
+            <g transform="translate(6.760017, 21.660000)">
+                <path d="M79.3701349,40.850601 L57.0056981,15.4645043" id="Path-2" stroke-width="7"></path>
+                <path d="M57.0056981,40.850601 L79.3701349,15.4645043" id="Path-2" stroke-width="7"></path>
+                <g id="megaphone" transform="translate(0.008686, 0.957552)" stroke-width="6" fill="#fff">
+                    <path d="M6.24343114,15.881703 L24.3860999,15.881703 L36.3409187,3.23706548 C44.6801883,9.93438426 44.6801883,44.0656157 36.3409187,50.7629345 L24.3860999,38.118297 L6.24343114,38.118297 L6.24343114,15.881703 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

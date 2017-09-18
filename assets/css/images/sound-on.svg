@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>sound-on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="sound-on" stroke="#fff" stroke-width="6">
+            <g transform="translate(6.765210, 22.500000)">
+                <g id="megaphone" transform="translate(0.000000, 0.206230)" fill="#fff" stroke-linejoin="round">
+                    <path d="M6.24343114,15.881703 L24.3860999,15.881703 L36.3409187,3.23706548 C44.6801883,9.93438426 44.6801883,44.0656157 36.3409187,50.7629345 L24.3860999,38.118297 L6.24343114,38.118297 L6.24343114,15.881703 Z" id="Path"></path>
+                </g>
+                <path d="M55.9779425,16.0745164 C59.1528493,23.1794144 59.1528493,31.2330452 55.9779425,38.3379432" id="Path-3"></path>
+                <path d="M65.4842197,9.82321354 C71.0637926,20.3742971 71.0637926,34.0381625 65.4842197,44.5892461" id="Path-3"></path>
+                <path d="M74.7059118,3.23889538 C82.6896046,18.1715613 82.6896046,36.2408983 74.7059118,51.1735642" id="Path-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>
