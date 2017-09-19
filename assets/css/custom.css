@@ -1,0 +1,73 @@
+
+/* Video Background */
+#video-background {
+  width: 180vh; /* roughly 16/9, but tweaked by trial and error */
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+}
+
+/* Mute Button */
+#mute {
+  position: absolute;
+  bottom: 1em;
+  left: 3%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.6;
+  height: 3em;
+  width: 4em;
+  z-index: 1;
+  border: 0;
+}
+
+.sound-on {
+  background-image: url("images/sound-on.svg");
+}
+
+.sound-off {
+  background-image: url("images/sound-off.svg");
+}
+
+/* Size Classes */
+
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 980px) {
+
+  #banner .content {
+    max-width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 736px) {
+
+  /* Remove video from background and put it inline? */
+  /* #video-background {
+    top: unset;
+    bottom: unset;
+    position: relative;
+    min-width: 480px;
+  }
+
+  #banner {
+
+  }
+
+  #banner:before {
+    display: none;
+  }
+
+  #banner .content {
+    padding: 1em 0 0 0;
+    margin-bottom: -1em;
+  }*/
+}
