@@ -20,7 +20,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 // Mute button
-$('#mute').on('click', function() {
+function toggleMute() {
 	var button = $('#mute');
 	var soundOn = button.hasClass('sound-on');
 	if (soundOn) {
@@ -32,4 +32,4 @@ $('#mute').on('click', function() {
 		button.addClass('sound-on');
 		player.unMute();
 	}
-});
+}
