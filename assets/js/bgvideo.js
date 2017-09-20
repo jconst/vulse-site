@@ -48,11 +48,17 @@ function redrawMuteButton(shouldMute) {
 
 function loaded() {
   var mobile = isMobile.any();
+  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
   if (mobile) {
     $('#yt-frame-api').remove();
     $('#yt-embed').remove();
     $('#banner, .content').addClass('mobile');
     $('.video-background').addClass('mobile');
+    if (isSafari) {
+      $('#banner').addClass('mobilesafari');
+      $('.video-background').addClass('mobilesafari');
+    }
   } else {
     $('#html5-embed').remove();
   }

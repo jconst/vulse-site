@@ -13,6 +13,8 @@
   margin-top: -3.5em; /* height of header */
 }
 
+
+
 /* Mute Button */
 #mute {
   position: absolute;
@@ -31,6 +33,15 @@
 #banner .content.mobile {
   padding: 2em 0 0 0;
   overflow-x: hidden;
+}
+
+/* account for fucking bullshit tab bar occluding the viewport */
+#banner.mobilesafari {
+  min-height: 82vh;
+}
+.video-background.mobilesafari {
+  height: 91vh;
+  width: 163.8vh;
 }
 
 .sound-on {
