@@ -1,6 +1,6 @@
 var player = {};
 function onYouTubeIframeAPIReady() {
-  if (isMobile()) {
+  if (isMobile.any()) {
     return;
   }
   var videoId = 'kjkjmTm0XD4';
@@ -47,11 +47,12 @@ function redrawMuteButton(shouldMute) {
 }
 
 function loaded() {
-  var mobile = isMobile();
+  var mobile = isMobile.any();
   if (mobile) {
     $('#yt-frame-api').remove();
     $('#yt-embed').remove();
     $('#banner, .content').addClass('mobile');
+    $('.video-background').addClass('mobile');
   } else {
     $('#html5-embed').remove();
   }
@@ -59,6 +60,3 @@ function loaded() {
 }
 window.onload = loaded;
 
-function isMobile() {
-  return true; //(skel.vars.os === "ios" || skel.vars.os === "android");
-}

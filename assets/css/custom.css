@@ -9,6 +9,10 @@
   top: 0;
 }
 
+.video-background.mobile {
+  margin-top: -3.5em; /* height of header */
+}
+
 /* Mute Button */
 #mute {
   position: absolute;
@@ -25,7 +29,8 @@
 }
 
 #banner .content.mobile {
-  padding: 3em 0 0 0;
+  padding: 2em 0 0 0;
+  overflow-x: hidden;
 }
 
 .sound-on {
