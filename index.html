@@ -29,12 +29,16 @@
 
 		<div id="page-wrapper">
 			<!-- Banner -->
-				<div id="video-background"></div>
+				<div id="yt-embed" class="video-background"></div>
+				<video id="html5-embed" class="video-background" autoplay muted loop webkit-playsinline playsinline>
+					<source src="video/demo.mp4" type="video/mp4">
+				</video>
+
 				<section id="banner">
 					<div class="content">
 						<header>
 							<h2>Amaze Your Audience</h2>
-							<p>Vulse is the only app that lets you control effects <i>while you play</i> by touching your screen and rotating your guitar.</p>
+							<p>Vulse is the only app that lets you control effects <i>while you play</i> by touching your screen and rotating your instrument.</p>
 						</header>
 					</div>
 
@@ -44,7 +48,7 @@
 
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/pic02.png" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
@@ -196,7 +200,7 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
-            <script async src="https://www.youtube.com/iframe_api"></script>
+            <script id="yt-frame-api" async src="https://www.youtube.com/iframe_api"></script>
             <script src="assets/js/bgvideo.js"></script>
 
 	</body>

@@ -1,6 +1,6 @@
 
 /* Video Background */
-#video-background {
+.video-background {
   width: 180vh; /* roughly 16/9, but tweaked by trial and error */
   height: 100vh;
   left: 50%;
@@ -20,8 +20,12 @@
   opacity: 0.6;
   height: 3em;
   width: 4em;
-  z-index: 1;
+  z-index: 30;
   border: 0;
+}
+
+#banner .content.mobile {
+  padding: 3em 0 0 0;
 }
 
 .sound-on {
@@ -50,24 +54,4 @@
 
 @media screen and (max-width: 736px) {
 
-  /* Remove video from background and put it inline? */
-  /* #video-background {
-    top: unset;
-    bottom: unset;
-    position: relative;
-    min-width: 480px;
-  }
-
-  #banner {
-
-  }
-
-  #banner:before {
-    display: none;
-  }
-
-  #banner .content {
-    padding: 1em 0 0 0;
-    margin-bottom: -1em;
-  }*/
 }

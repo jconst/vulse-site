@@ -3274,14 +3274,6 @@
 		z-index: 21;
 	}
 
-		#banner:before {
-			content: '';
-			display: inline-block;
-			height: 100vh;
-			vertical-align: middle;
-			width: 1%;
-		}
-
 		#banner:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
 			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
@@ -3297,10 +3289,10 @@
 		}
 
 		#banner .content {
-			display: inline-block;
-			margin-right: 1%;
+			display: block;
+			margin: 0 auto;
 			max-width: 60%;
-			padding: 5em;
+			padding: 4em;
 			position: relative;
 			text-align: center;
 			vertical-align: top;
