@@ -24,6 +24,15 @@
   border: 0;
 }
 
+.sound-on {
+  background-image: url("images/sound-on.svg");
+}
+
+.sound-off {
+  background-image: url("images/sound-off.svg");
+}
+
+
 #banner .content.mobile {
   overflow-x: hidden;
 }
@@ -32,18 +41,10 @@
 #banner.mobilesafari {
   min-height: 82vh;
 }
-.video-background.mobilesafari {
+#banner .video-background.mobilesafari {
   height: 91vh;
   width: 163.8vh;
   margin-top: -3.5em; /* height of header */
-}
-
-.sound-on {
-  background-image: url("images/sound-on.svg");
-}
-
-.sound-off {
-  background-image: url("images/sound-off.svg");
 }
 
 /* Size Classes */
@@ -58,6 +59,20 @@
 
   #banner .content {
     max-width: 80%;
+  }
+
+  .spotlight .video-background {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 55.5555vw;
+    max-height: 40vh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .spotlight .content {
+    padding-top: 20px;
   }
 }
 
