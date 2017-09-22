@@ -47,6 +47,31 @@
   margin-top: -3.5em; /* height of header */
 }
 
+ul li {
+  line-height: 1.3em;
+  margin-bottom: 0.6em;
+}
+
+.button {
+  width: 13em;
+}
+
+#links span {
+  opacity: 0.7;
+}
+
+#links span + span:before {
+  width: 3em;
+  position: relative;
+  display: inline-block;
+  content: '|';
+  text-align: center;
+}
+
+#four p {
+  margin: 2em 15% 1em;
+}
+
 /* Size Classes */
 
 @media screen and (max-width: 1680px) {
@@ -74,9 +99,15 @@
   .spotlight .content {
     padding-top: 20px;
   }
+
+  ul li {
+    list-style-position: inside;
+  }
 }
 
 
 @media screen and (max-width: 736px) {
-
+  #links {
+    display: none;
+  }
 }
