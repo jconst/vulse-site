@@ -2970,6 +2970,14 @@
 					font-weight: 300;
 				}
 
+/* Guide */
+	
+	.guide {
+		background: #383A49;
+		padding: 6em 0;
+		text-align: center;
+	}
+
 /* Footer */
 
 	#footer {
@@ -3060,13 +3068,14 @@
 				width: 25em;
 			}
 
-		/* Wrapper */
 
 			.wrapper {
 				padding: 2.5em 0 2.5em 0;
 			}
 
-		/* Footer */
+			.guide {
+				padding: 4.5em 0;
+			}
 
 			#footer {
 				padding: 4.5em 0;
@@ -3135,7 +3144,9 @@
 						margin: 0;
 					}
 
-		/* Footer */
+			.guide {
+				padding: 4.5em 0;
+			}
 
 			#footer {
 				padding: 4.5em 0;
@@ -3253,7 +3264,9 @@
 				padding-top: 44px !important;
 			}
 
-		/* Footer */
+			.guide {
+				padding: 3.25em 1.5em;
+			}
 
 			#footer {
 				padding: 3.25em 1.5em;
@@ -3334,6 +3347,12 @@
 
 			#banner .content {
 				padding: 3em 1.5625em 5.25em 1.5625em;
+			}
+
+		/* Guide */
+
+			.guide {
+				padding: 3em 1.25em;
 			}
 
 		/* Footer */
