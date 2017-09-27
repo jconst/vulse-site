@@ -2435,7 +2435,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #2CB37B;
+			background-color: #2FBF83;
 			box-shadow: none;
 			color: #ffffff !important;
 			font-size: 14pt;
@@ -2736,7 +2736,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #2CB37B;
+			background: #2FC084;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
