@@ -2780,6 +2780,8 @@
 			background-color: #2CB37B;
 			box-shadow: none;
 			color: #ffffff !important;
+			font-size: 14pt;
+			font-weight: bold;
 		}
 
 			input[type="submit"].special:hover,
@@ -3022,11 +3024,11 @@
 		}
 
 		.spotlight.style2 .content {
-			border-color: #39c088;
+			border-color: #41B8D0;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #5480F1;
+			border-color: #41B8D0;
 		}
 
 		.spotlight.inactive .content {
@@ -3076,7 +3078,7 @@
 	}
 
 		.wrapper.style2 {
-			background: #32CD8D;
+			background: #2CB37B;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3271,10 +3273,10 @@
 	}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.6), rgba(23, 24, 32, 0.6)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 1), rgba(23, 24, 32, 0.1)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3307,6 +3309,7 @@
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+					font-weight: 300;
 				}
 
 /* Footer */
