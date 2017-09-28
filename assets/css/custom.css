@@ -73,6 +73,68 @@ ul li {
   margin: 2em 15% 1em;
 }
 
+/* Guide */
+
+.guide .content {
+  text-align: left;
+  width: 50em;
+  margin: 0 auto;
+  padding: 0 3em;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
+}
+
+  .guide .content header {
+    text-align: center;
+  }
+
+.guide img.full {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-box {
+  margin-right: 2em;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+  .product-box:hover {
+    opacity: 1;
+  }
+
+  .product-box .product-image {
+    float: left;
+    height: 100%;
+    margin: 0.3em 2em 2em 0;
+    border-radius: 10px;
+  }
+
+  .product-box .details {
+    min-width: 200px;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+
+  .product-box a.button {
+    height: 2em;
+    line-height: 2em;
+    font-size: 12pt;
+    margin-top: 0.5em;
+  }
+
+.scroll-fragment:before { 
+  /* This makes sure headers aren't covered when they click
+     a link that scrolls to a #fragment on the page. */
+  display: block; 
+  content: " "; 
+  margin-top: -80px; 
+  height: 80px; 
+  visibility: hidden; 
+}
+
 /* Size Classes */
 
 @media screen and (max-width: 1680px) {
@@ -103,6 +165,13 @@ ul li {
 
   ul li {
     list-style-position: inside;
+  }
+
+  .guide .content {
+    text-align: left;
+    width: 100%;
+    border: none;
+    padding: 1em 1em;
   }
 }
 
