@@ -57,9 +57,14 @@ ul li {
 }
 
 #links span {
-  font-size: 18pt;
+  font-size: 12pt;
   font-weight: 300;
 }
+
+  #links span.logo {
+    font-size: 18pt;
+    font-weight: 300;
+  }
 
 #links span + span:before {
   width: 3em;
