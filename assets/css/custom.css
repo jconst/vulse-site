@@ -79,7 +79,7 @@ ul li {
   text-align: left;
   width: 50em;
   margin: 0 auto;
-  padding: 0 3em;
+  padding: 0 3em 1em 3em;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 50px;
