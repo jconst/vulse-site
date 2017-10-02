@@ -30,6 +30,7 @@ function loaded() {
   var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
   var smallSafari = isSafari && !isMobile.iPad();
 
+
   if (mobile) {
     $('#banner, .content').addClass('mobile');
     $('.video-background').addClass('mobile');
@@ -37,10 +38,13 @@ function loaded() {
       $('#banner').addClass('mobilesafari');
       $('.video-background').addClass('mobilesafari');
     }
-  } else {
+  } 
+
+  var videoMuted = mobile || isSafari;
+  if (!videoMuted) {
     $('#html5-embed').prop('muted', false);
   }
-  redrawMuteButton(mobile);
+  redrawMuteButton(videoMuted);
 }
 loaded();
 
