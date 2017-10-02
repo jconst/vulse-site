@@ -17,9 +17,18 @@ function redrawMuteButton(shouldMute) {
   }
 }
 
+$('video').each(function(i, vid) {
+  $(vid).scrollex({
+    enter: function() {
+      vid.play();
+    }
+  })
+});
+
 function loaded() {
   var mobile = isMobile.any();
-  var smallSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/) && !isMobile.iPad();
+  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+  var smallSafari = isSafari && !isMobile.iPad();
 
   if (mobile) {
     $('#banner, .content').addClass('mobile');
@@ -33,5 +42,5 @@ function loaded() {
   }
   redrawMuteButton(mobile);
 }
-window.onload = loaded;
+loaded();
 
