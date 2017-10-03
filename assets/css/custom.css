@@ -33,7 +33,11 @@
 }
 
 
-#banner .content.mobile {
+.rounded {
+  border-radius: 10px;
+}
+
+#banner {
   overflow-x: hidden;
 }
 
@@ -78,58 +82,40 @@ ul li {
   margin: 2em 15% 1em;
 }
 
-
-
-#how-to-use {
-  height: 100vh;
-}
-
+/* 'How to Use' page */
 #how-to-use .content {
-  height: 90%;
+  padding-bottom: 2em;
 }
 
-  #how-to-use h2 {
-    margin-bottom: 0.8em;
+#how-to-use h2 {
+  margin-bottom: 0.8em;
+}
+
+#how-to-use .steps {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#how-to-use .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0%; /* allows accurate centering */
+}
+
+#how-to-use .step:first-of-type {
+  margin-right: 4em;
+}
+
+  #how-to-use .step video {
+    width: 25em;
+    margin-bottom: 5px;
   }
 
-  #how-to-use .steps {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: wrap;
-    height: 100%;
-  }
-
-  .step {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 1 0%;
-    height: 100%;
-    /*font-size: 1.2vw;*/
-  }
-
-  #how-to-use .step:first-of-type {
-    margin-right: 4em;
-  }
-
-    .vid-wrapper {
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      justify-content: flex-start;
-    }
-
-      .vid-wrapper video {
-        flex: 1 1 0%;
-        width: 100% !important;
-        height: auto !important;
-      }
-
-.rounded {
-  border-radius: 10px;
+#how-to-use .actions li {
+  padding: 0;
+  margin: 5px 10px;
 }
 
 /* Guide */
@@ -233,11 +219,17 @@ ul li {
     padding: 1em 1em;
   }
 
-  /*#how-to-use .steps {
+
+  #how-to-use .step:first-of-type {
+    margin-right: 0;
+  }
+
+  #how-to-use .steps {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-  }*/
+    height: unset;
+  }
 }
 
 
