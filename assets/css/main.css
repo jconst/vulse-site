@@ -2683,13 +2683,27 @@
 		padding-top: 0;
 	}
 
+	.full-page {
+		min-height: 100vh;
+		position: relative;
+		text-align: center;
+	}
+
+		.full-page .content {
+			display: block;
+			margin: 0 auto;
+			padding: 5em;
+			position: relative;
+			text-align: center;
+			vertical-align: top;
+			z-index: 1;
+		}
+
+
 /* Banner */
 
 	#banner {
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
-		position: relative;
-		text-align: center;
 		z-index: 21;
 	}
 
@@ -2708,14 +2722,7 @@
 		}
 
 		#banner .content {
-			display: block;
-			margin: 0 auto;
 			max-width: 60%;
-			padding: 5em;
-			position: relative;
-			text-align: center;
-			vertical-align: top;
-			z-index: 1;
 		}
 
 			#banner .content header {
