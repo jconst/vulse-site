@@ -82,6 +82,34 @@ ul li {
   margin: 2em 15% 1em;
 }
 
+/* App Preview */
+.app-preview {
+  position: absolute;
+  height: 400px;
+  width: 702px; /* height * 1.755 */
+
+  top: 80px;
+  left: 0; right: 0;
+  margin: 0 auto;
+  z-index: 50;
+}
+
+.phone-frame {
+  background-image: url("images/iphone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.phone-inner {
+  position: absolute;
+  object-fit: cover;
+  top: 12.075134%;
+  left: 15.953109%;
+  width: 68.09378%;
+  height: 67.26296%;
+}
+
 /* 'How to Use' page */
 #how-to-use .content {
   padding-bottom: 2em;
