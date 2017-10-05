@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="79px" height="99px" viewBox="0 0 79 99" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>touch-ripple</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="currentColor" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="currentColor" stop-opacity="0" offset="71.4225925%"></stop>
+            <stop stop-color="currentColor" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="29.5820267" cy="29.5820267" r="29.5820267"></circle>
+        <circle id="path-3" cx="29.5820267" cy="29.5820267" r="21.2541825"></circle>
+        <circle id="path-4" cx="29.5820267" cy="29.5820267" r="12.3951574"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="touch-ripple" transform="translate(-1.000000, 0.000000)">
+            <g id="ripple" transform="translate(0.993094, 0.000000)">
+                <g id="Oval" opacity="0.398736394">
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <circle stroke-opacity="0.317227129" stroke="currentColor" stroke-width="3" cx="29.5820267" cy="29.5820267" r="28.0820267"></circle>
+                </g>
+                <g id="Oval" opacity="0.64600317">
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <circle stroke-opacity="0.317227129" stroke="currentColor" stroke-width="3" cx="29.5820267" cy="29.5820267" r="19.7541825"></circle>
+                </g>
+                <g id="Oval" opacity="0.849739571">
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <circle stroke-opacity="0.317227129" stroke="currentColor" stroke-width="3" cx="29.5820267" cy="29.5820267" r="10.8951574"></circle>
+                </g>
+            </g>
+            <g id="touch" transform="translate(18.000000, 26.000000)" fill-rule="nonzero" fill="currentColor">
+                <path d="M14.9621011,28.9209138 C9.6388666,9.0543322 9.5314947,8.6536147 8.9247816,6.3893301 C8.7543111,4.3071353 8.3842784,1.7954139 12.1053635,0.7983522 C15.8264485,-0.1987094 16.983101,2.8020998 17.7445662,4.026076 C18.6502573,5.9821371 24.6983316,26.3120976 24.6983316,26.3120976 C24.6983316,26.3120976 29.9954146,23.0223569 34.5316031,25.2816423 C39.5742904,22.2338007 42.2839636,24.252 44.719408,24.7043197 C49.6308715,22.283402 51.7970944,24.808383 53.2552616,26.3341069 C61.5138614,40.2761234 56.1632754,41.1878769 57.010289,49.823759 C60.745231,54.2870532 60.8058832,59.0964632 62,63.5529678 C51.6255517,72.4026555 30.4346179,72.0108864 30.4346179,72.0108864 C30.4346179,72.0108864 27.7089923,64.6455368 27.9841651,62.8656711 C25.3643846,60.6671048 20.2607738,58.0258736 18.1153396,56.0309534 C15.9699053,54.0360332 12.6506807,49.0814289 12.6506807,49.0814289 C12.6506807,49.0814289 -0.1221425,36.7195768 0.3042398,34.4528367 C1.6381258,30.6723611 3.8429541,30.6130825 6.0199461,30.0297592 C14.8913395,30.2535297 20.2853357,48.7874955 14.9621011,28.9209138 Z" id="horizontal-pan"></path>
+            </g>
+        </g>
+    </g>
+</svg>

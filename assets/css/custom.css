@@ -1,65 +1,18 @@
-
-/* Video Background */
-.video-background {
-  width: 180vh; /* roughly 16/9, but tweaked by trial and error */
-  height: 100vh;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-  top: 0;
+/* General */
+ul li {
+  line-height: 1.5em;
+  margin-bottom: 0.6em;
 }
-
-/* Mute Button */
-#mute {
-  position: absolute;
-  bottom: 1em;
-  left: 3%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.75;
-  height: 3em;
-  width: 4em;
-  z-index: 30;
-  border: 0;
-}
-
-.sound-on {
-  background-image: url("images/sound-on.svg");
-}
-
-.sound-off {
-  background-image: url("images/sound-off.svg");
-}
-
 
 .rounded {
   border-radius: 10px;
-}
-
-#banner {
-  overflow-x: hidden;
-}
-
-/* account for fucking bullshit tab bar occluding the viewport */
-#banner.mobilesafari {
-  min-height: 82vh;
-}
-#banner .video-background.mobilesafari {
-  height: 91vh;
-  width: 163.8vh;
-  margin-top: -3.5em; /* height of header */
-}
-
-ul li {
-  line-height: 1.3em;
-  margin-bottom: 0.6em;
 }
 
 .button {
   width: 13em;
 }
 
+/* Header */
 #links span {
   font-size: 12pt;
   font-weight: 300;
@@ -78,20 +31,99 @@ ul li {
   text-align: center;
 }
 
-#download p {
-  margin: 2em 15% 1em;
+/* Banner (First Page) */
+#banner {
+  overflow-x: hidden;
+}
+
+.video-background {
+  width: 180vh; /* roughly 16/9, but tweaked by trial and error */
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+}
+
+#mute {
+  position: absolute;
+  bottom: 1em;
+  left: 3%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.75;
+  height: 3em;
+  width: 4em;
+  z-index: 30;
+  border: 0;
+}
+
+#mute.sound-on {
+  background-image: url("images/sound-on.svg");
+}
+
+#mute.sound-off {
+  background-image: url("images/sound-off.svg");
+}
+
+/* account for fucking bullshit tab bar occluding the viewport */
+#banner.mobilesafari {
+  min-height: 82vh;
+}
+#banner .video-background.mobilesafari {
+  height: 91vh;
+  width: 163.8vh;
+  margin-top: -3.5em; /* height of header */
+}
+
+/* Details Page */
+#details {
+  background: #313340;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+  .detail-row#first-row {
+    align-items: center;
+  }
+
+.detail-row header {
+  flex: 1;
+}
+
+.detail-item {
+  margin: 0 2em;
+  flex: 1;
+}
+
+.detail-item p {
+  margin-bottom: 0.3em;
+  line-height: 1.5em;
+}
+
+.detail-item .svg {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 1000px;
+  padding: 15px;
+  overflow: visible;
+}
+
+.detail-item .svg path {
+  fill: #ffffff;
 }
 
 /* App Preview */
 .app-preview {
-  position: absolute;
+  position: relative;
   height: 400px;
   width: 702px; /* height * 1.755 */
-
-  top: 80px;
-  left: 0; right: 0;
-  margin: 0 auto;
-  z-index: 50;
 }
 
 .phone-frame {
@@ -146,7 +178,18 @@ ul li {
   margin: 5px 10px;
 }
 
-/* Guide */
+/* Download Section */
+
+#download p {
+  margin: 2em 15% 1em;
+}
+
+/* Guide */  
+.guide {
+  background: #313340;
+  padding: 3em 0;
+  text-align: center;
+}
 
 .guide .content {
   text-align: left;
@@ -222,31 +265,14 @@ ul li {
     max-width: 80%;
   }
 
-  .spotlight .video-background {
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 55.5555vw;
-    max-height: 40vh;
-    overflow: hidden;
-    margin: 0;
+  .detail-row {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .spotlight .content {
-    padding-top: 20px;
+  .detail-item {
+    margin-bottom: 1em;
   }
-
-  ul li {
-    list-style-position: inside;
-  }
-
-  .guide .content {
-    text-align: left;
-    width: 100%;
-    border: none;
-    padding: 1em 1em;
-  }
-
 
   #how-to-use .step:first-of-type {
     margin-right: 0;
@@ -257,6 +283,13 @@ ul li {
     justify-content: flex-start;
     align-items: stretch;
     height: unset;
+  }
+
+  .guide .content {
+    text-align: left;
+    width: 100%;
+    border: none;
+    padding: 1em 1em;
   }
 }
 
