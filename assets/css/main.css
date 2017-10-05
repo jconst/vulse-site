@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,100italic,300italic");
 
 /*
 	Landed by HTML5 UP
@@ -61,153 +61,17 @@ body {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.container.\31 25\25 {
-	width: 100%;
-	max-width: 87.5em;
-	min-width: 70em;
-}
-
-.container.\37 5\25 {
-	width: 52.5em;
-}
-
-.container.\35 0\25 {
-	width: 35em;
-}
-
-.container.\32 5\25 {
-	width: 17.5em;
-}
-
-.container {
 	width: 70em;
-}
-
-@media screen and (max-width: 1680px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 87.5em;
-		min-width: 70em;
-	}
-
-	.container.\37 5\25 {
-		width: 52.5em;
-	}
-
-	.container.\35 0\25 {
-		width: 35em;
-	}
-
-	.container.\32 5\25 {
-		width: 17.5em;
-	}
-
-	.container {
-		width: 70em;
-	}
-
 }
 
 @media screen and (max-width: 1280px) {
 
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 112.5%;
-		min-width: 90%;
-	}
-
-	.container.\37 5\25 {
-		width: 67.5%;
-	}
-
-	.container.\35 0\25 {
-		width: 45%;
-	}
-
-	.container.\32 5\25 {
-		width: 22.5%;
-	}
-
 	.container {
 		width: 90%;
 	}
-
 }
 
 @media screen and (max-width: 980px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 125%;
-		min-width: 100%;
-	}
-
-	.container.\37 5\25 {
-		width: 75%;
-	}
-
-	.container.\35 0\25 {
-		width: 50%;
-	}
-
-	.container.\32 5\25 {
-		width: 25%;
-	}
-
-	.container {
-		width: 100% !important;
-	}
-
-}
-
-@media screen and (max-width: 736px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 125%;
-		min-width: 100%;
-	}
-
-	.container.\37 5\25 {
-		width: 75%;
-	}
-
-	.container.\35 0\25 {
-		width: 50%;
-	}
-
-	.container.\32 5\25 {
-		width: 25%;
-	}
-
-	.container {
-		width: 100% !important;
-	}
-
-}
-
-@media screen and (max-width: 480px) {
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 125%;
-		min-width: 100%;
-	}
-
-	.container.\37 5\25 {
-		width: 75%;
-	}
-
-	.container.\35 0\25 {
-		width: 50%;
-	}
-
-	.container.\32 5\25 {
-		width: 25%;
-	}
 
 	.container {
 		width: 100% !important;
@@ -245,7 +109,7 @@ a {
 
 strong, b {
 	color: #ffffff;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 em, i {
@@ -628,7 +492,7 @@ dl {
 		box-shadow: none;
 		color: #ffffff !important;
 		font-size: 14pt;
-		font-weight: bold;
+		font-weight: 300;
 	}
 
 		.button.special:hover {
@@ -681,75 +545,14 @@ dl {
 		z-index: 1;
 	}
 
-/* Wrapper */
+/* Download */
 
-.wrapper {
+#download {
 	padding: 3em 0 3em 0;
+	background: #2FC084;
 }
-
-	.wrapper.style2 {
-		background: #2FC084;
-	}
-
-		.wrapper.style2 input[type="text"]:focus,
-		.wrapper.style2 input[type="password"]:focus,
-		.wrapper.style2 input[type="email"]:focus,
-		.wrapper.style2 select:focus,
-		.wrapper.style2 textarea:focus {
-			border-color: rgba(255, 255, 255, 0.5);
-		}
-
-		.wrapper.style2 input[type="submit"]:hover, .wrapper.style2 input[type="submit"]:active,
-		.wrapper.style2 input[type="reset"]:hover,
-		.wrapper.style2 input[type="reset"]:active,
-		.wrapper.style2 input[type="button"]:hover,
-		.wrapper.style2 input[type="button"]:active,
-		.wrapper.style2 .button:hover,
-		.wrapper.style2 .button:active {
-			background-color: rgba(255, 255, 255, 0.075) !important;
-			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-			color: #ffffff !important;
-		}
-
-		.wrapper.style2 input[type="submit"]:active,
-		.wrapper.style2 input[type="reset"]:active,
-		.wrapper.style2 input[type="button"]:active,
-		.wrapper.style2 .button:active {
-			background-color: rgba(255, 255, 255, 0.25) !important;
-		}
-
-		.wrapper.style2 input[type="submit"].special,
-		.wrapper.style2 input[type="reset"].special,
-		.wrapper.style2 input[type="button"].special,
-		.wrapper.style2 .button.special {
-			background-color: #ffffff;
-			color: #41B8D0 !important;
-		}
-
-			.wrapper.style2 input[type="submit"].special:hover, .wrapper.style2 input[type="submit"].special:active,
-			.wrapper.style2 input[type="reset"].special:hover,
-			.wrapper.style2 input[type="reset"].special:active,
-			.wrapper.style2 input[type="button"].special:hover,
-			.wrapper.style2 input[type="button"].special:active,
-			.wrapper.style2 .button.special:hover,
-			.wrapper.style2 .button.special:active {
-				background-color: rgba(255, 255, 255, 0.075) !important;
-				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-				color: #ffffff !important;
-			}
-
-			.wrapper.style2 input[type="submit"].special:active,
-			.wrapper.style2 input[type="reset"].special:active,
-			.wrapper.style2 input[type="button"].special:active,
-			.wrapper.style2 .button.special:active {
-				background-color: rgba(255, 255, 255, 0.25) !important;
-			}
 
 /* Header */
-
-#page-wrapper {
-	padding-top: 3.5em;
-}
 
 #header {
 	background: rgba(39, 40, 51, 0.965);
@@ -815,10 +618,6 @@ dl {
 				#header nav ul li > ul {
 					display: none;
 				}
-
-body.landing #page-wrapper {
-	padding-top: 0;
-}
 
 .full-page {
 	min-height: 100vh;
@@ -957,7 +756,7 @@ body.landing #page-wrapper {
 		}
 
 
-		.wrapper {
+		#download {
 			padding: 2.5em 0 2.5em 0;
 		}
 
@@ -989,9 +788,9 @@ body.landing #page-wrapper {
 			padding: 2em 2.5em 1em 2em !important;
 		}
 
-	/* Wrapper */
+	/* Download */
 
-		.wrapper {
+		#download {
 			padding: 2.5em 2.5em 2.5em 2.5em;
 		}
 
@@ -1071,9 +870,9 @@ body.landing #page-wrapper {
 			margin: 0 0 2em 0;
 		}
 
-	/* Wrapper */
+	/* Download */
 
-		.wrapper {
+		#download {
 			padding: 1.25em 1.5em 1.25em 1.5em;
 		}
 
@@ -1172,9 +971,6 @@ body.landing #page-wrapper {
 
 	/* Button */
 
-		input[type="submit"],
-		input[type="reset"],
-		input[type="button"],
 		.button {
 			padding: 0;
 		}
@@ -1183,9 +979,9 @@ body.landing #page-wrapper {
 			padding: 1em 1.25em 0em 1.25em !important;
 		}
 
-	/* Wrapper */
+	/* Download */
 
-		.wrapper {
+		#download {
 			padding: 1em 1.25em 1em 1.25em;
 		}
 
