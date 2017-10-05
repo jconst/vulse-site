@@ -1,19 +1,33 @@
 // Mute button
-function toggleMute() {
-  var button = $('#mute');
-  var soundOn = button.hasClass('sound-on');
-  $("#html5-embed").prop('muted', soundOn);
-  redrawMuteButton(soundOn);
+function toggleMute(muteBtnSel) {
+  var muteBtn = $(muteBtnSel);
+  var muted = muteBtn.hasClass('sound-off');
+  var shouldMute = !muted;
+
+  if (shouldMute === false) { // if unmuting this video
+    // mute all videos first
+    $('.mute').each(function(i, otherMute) {
+      var otherBtn = $(otherMute);
+      applyMute(otherBtn, true);
+    });
+  }
+
+  applyMute(muteBtn, shouldMute);
 }
 
-function redrawMuteButton(shouldMute) {
-  var button = $('#mute');
+function applyMute(button, shouldMute) {
+  var vidId = button.attr('mutee');
+  $(vidId).prop('muted', shouldMute);
+  redrawMuteButton(button, shouldMute);
+}
+
+function redrawMuteButton(muteBtn, shouldMute) {
   if (shouldMute) {
-    button.removeClass('sound-on');
-    button.addClass('sound-off');
+    muteBtn.removeClass('sound-on');
+    muteBtn.addClass('sound-off');
   } else {
-    button.removeClass('sound-off');
-    button.addClass('sound-on');
+    muteBtn.removeClass('sound-off');
+    muteBtn.addClass('sound-on');
   }
 }
 
@@ -30,7 +44,6 @@ function loaded() {
   var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
   var smallSafari = isSafari && !isMobile.iPad();
 
-
   if (mobile) {
     $('#banner, .content').addClass('mobile');
     $('.video-background').addClass('mobile');
@@ -42,9 +55,9 @@ function loaded() {
 
   var videoMuted = mobile || isSafari;
   if (!videoMuted) {
-    $('#html5-embed').prop('muted', false);
+    $('#banner-vid').prop('muted', false);
   }
-  redrawMuteButton(videoMuted);
+  redrawMuteButton($('#banner-mute'), videoMuted);
 }
 loaded();
 

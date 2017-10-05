@@ -29,7 +29,7 @@
 		<div id="page-wrapper">
 			<!-- Banner -->
 				<section id="banner" class="full-page">
-					<video id="html5-embed" class="video-background" autoplay muted loop webkit-playsinline playsinline>
+					<video id="banner-vid" class="video-background" autoplay muted loop webkit-playsinline playsinline>
 						<source src="video/demo.mp4" type="video/mp4">
 					</video>
 					<div class="content">
@@ -39,7 +39,7 @@
 						</header>
 					</div>
 
-					<a href="javascript: toggleMute();" id="mute" class="sound-on"></a>
+					<a href="javascript: toggleMute('#banner-mute');" id="banner-mute" mutee="#banner-vid" class="mute sound-on"></a>
 					<a href="#details" class="goto-next scrolly">Next</a>
 				</section>
 
@@ -50,9 +50,12 @@
 
 						<div id="first-row" class="detail-row">
 							<div class="phone-frame app-preview">
-								<video class="phone-inner" autoplay muted loop webkit-playsinline playsinline>
-									<source src="video/preview.mp4" type="video/mp4">
-								</video>
+								<div class="phone-inner">
+									<video id="preview-vid" autoplay muted loop webkit-playsinline playsinline>
+										<source src="video/preview.mp4" type="video/mp4">
+									</video>
+									<a href="javascript: toggleMute('#preview-mute');" id="preview-mute" mutee="#preview-vid" class="mute sound-off"></a>
+								</div>
 							</div>
 
 							<header>
