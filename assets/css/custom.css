@@ -31,6 +31,42 @@ ul li {
   text-align: center;
 }
 
+/* Handle layout when guides are being viewed in the app web browser
+   (don't need to show header, download link, etc). */
+html.inapp #header {
+  display: none;
+}
+
+html.inapp #page-wrapper,
+html.inapp .guide {
+  padding-top: 0;
+}
+
+html.inapp .guide .content {
+  margin-top: 0em;
+  padding-top: 1.5em; 
+}
+
+html.inapp .guide header h2 {
+  display: none;
+}
+
+html.inapp .guide header p {
+  display: none;
+}
+
+html.inapp .guide p {
+  margin-bottom: 1.1em;
+}
+
+html.inapp .product-box {
+  opacity: 1.0 !important;
+}
+
+html.inapp #download {
+  display: none;
+}
+
 /* Banner (First Page) */
 #banner {
   overflow: hidden;
