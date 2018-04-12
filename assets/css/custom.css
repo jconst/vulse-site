@@ -283,6 +283,10 @@ html.inapp #download {
   border-radius: 10px;
 }
 
+.guide .small-bottom-margin {
+  margin-bottom: 0.2em;
+}
+
 .product-box {
   margin-right: 2em;
   width: 100%;
