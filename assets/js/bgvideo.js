@@ -53,7 +53,7 @@ function loaded() {
     }
   } 
 
-  redrawMuteButton($('#banner-mute'), videoMuted);
+  redrawMuteButton($('#banner-mute'), true);
 }
 loaded();
 
