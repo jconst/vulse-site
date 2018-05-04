@@ -53,10 +53,6 @@ function loaded() {
     }
   } 
 
-  var videoMuted = mobile || isSafari;
-  if (!videoMuted) {
-    $('#banner-vid').prop('muted', false);
-  }
   redrawMuteButton($('#banner-mute'), videoMuted);
 }
 loaded();
