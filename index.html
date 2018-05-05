@@ -37,9 +37,16 @@
 							<h2>Amaze Your Audience</h2>
 							<p>Vulse is the only app that lets you control effects <i>while you play</i> by touching your screen and rotating your instrument.</p>
 						</header>
+
+						<dialog id="referred-dialog">
+							<a class="close-button" href="javascript: document.querySelector('#referred-dialog').close()">✕</a>
+							<h3>You've Been Invited!</h3>
+							<p>Get a free effect by entering the code <b><span id="refer-code"></span></b> in Vulse, or just click below to add it to your iCloud now.</p>
+							<a href="javascript: Refer.onClickAddCredit()" class="button special">Add Credit to iCloud</a>
+						</dialog>
 					</div>
 
-					<a href="javascript: toggleMute('#banner-mute');" id="banner-mute" mutee="#banner-vid" class="mute sound-off"></a>
+					<a href="javascript: toggleMute('#banner-mute');" id="banner-mute" mutee="#banner-vid" class="mute sound-on"></a>
 					<a href="#details" class="goto-next scrolly">Next</a>
 				</section>
 
@@ -156,13 +163,18 @@
 
 		</div>
 
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.css" />
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 
+			<script src="https://cdn.apple-cloudkit.com/ck/2/cloudkit.js"></script>
+
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/refer.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/inline-svg.js"></script>
 

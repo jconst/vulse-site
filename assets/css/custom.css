@@ -67,6 +67,75 @@ html.inapp #download {
   display: none;
 }
 
+/* Referral Dialog */
+
+#referred-dialog {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  background: #E0E0E0;
+  width: 30em;
+}
+
+#referred-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#referred-dialog + .backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  color: #404040;
+  line-height: 1em;
+}
+
+.close-button:hover {
+  color: #707070 !important;
+}
+
+.close-button:focus {
+  outline-width: 0;
+}
+
+#referred-dialog h3 {
+  font-weight: 400;
+  color: #303030;
+  margin-bottom: 0.5em;
+}
+
+#referred-dialog p {
+  font-weight: 300;
+  color: #303030;
+  margin-bottom: 1em;
+}
+
+#referred-dialog b {
+  color: #303030;
+  font-weight: 600;
+}
+
+#referred-dialog .button {
+  line-height: 2.5em;
+  height: 2.5em;
+  border-radius: 8px;
+}
+
+.icloud-button {
+  text-align: center;
+  margin: 0 auto;
+  width: 10em;
+}
+
+#apple-sign-in-button {
+  display: block;
+}
+
 /* Banner (First Page) */
 #banner {
   overflow: hidden;

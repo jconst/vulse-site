@@ -8,26 +8,34 @@
   $(function() {
 
     // Fix: Placeholder polyfill.
-      $('form').placeholder();
+    $('form').placeholder();
 
     // Scrolly links.
-      $('.scrolly').scrolly({
-        speed: 500
-      });
+    $('.scrolly').scrolly({
+      speed: 500
+    });
 
-      if (getParameterByName("inapp")) {
-        $('html').addClass('inapp');
-      }
+    if (getParameterByName("inapp")) {
+      $('html').addClass('inapp');
+    }
+
+    var referCode = getParameterByName("code");
+    if (referCode) {
+      $('#refer-code').text(referCode);
+      document.querySelector('#referred-dialog').showModal();
+      Refer.init(referCode);
+      Refer.setupICloud();
+    }
   });
 
 })(jQuery);
 
 function getParameterByName(name) {
-    var url = window.location.href;
-    name = name.replace(/[\[\]]/g, "\\$&");
-    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  var url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
