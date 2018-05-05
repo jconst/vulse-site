@@ -49,11 +49,10 @@ var Refer = (function() {
       contentType: 'application/json',
       async: true,
       success: function(data) {
-        alert("success!");
         console.log(data);
       },
       error: function(req, name, error) {
-        // TODO: handle error
+        alert("Error while adding your credit to iCloud. Try refreshing the page.");
       }
     });
   }
@@ -81,13 +80,14 @@ var Refer = (function() {
       async: true,
       success: function(data) {
         if (data.records.length > 0) {
-          // TODO: handle error
+          alert("Sorry! We couldn't find a user with that referral code. Ask your friend if they've changed their code.");
+          return
         }
         var referrerId = data.records[0].recordName;
         createReferral(referrerId);
       },
       error: function(req, name, error) {
-        // TODO: handle error
+        alert("Error while fetching the referrer's ID from iCloud. Try refreshing the page.");
       }
     });
   };
