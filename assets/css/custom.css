@@ -136,6 +136,20 @@ html.inapp #download {
   display: block;
 }
 
+dialog[open] {
+  animation: show 0.5s ease normal;
+}
+@keyframes show{
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* Banner (First Page) */
 #banner {
   overflow: hidden;
