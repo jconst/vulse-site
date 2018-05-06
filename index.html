@@ -37,14 +37,14 @@
 							<h2>Amaze Your Audience</h2>
 							<p>Vulse is the only app that lets you control effects <i>while you play</i> by touching your screen and rotating your instrument.</p>
 						</header>
-
-						<dialog id="referred-dialog">
-							<a class="close-button" href="javascript: document.querySelector('#referred-dialog').close()">✕</a>
-							<h3>You've Been Invited!</h3>
-							<p>Get a free effect by entering the code <b><span id="refer-code"></span></b> in Vulse, or just click below to add it to your iCloud now.</p>
-							<a href="javascript: Refer.onClickAddCredit()" class="button special">Add Credit to iCloud</a>
-						</dialog>
 					</div>
+
+					<dialog id="referred-dialog">
+						<a class="close-button" href="javascript: document.querySelector('#referred-dialog').close()">✕</a>
+						<h3 id="refer-title">You've Been Invited!</h3>
+						<p id="refer-body">Get a free effect by entering the code <b><span id="refer-code"></span></b> in Vulse, or just click below to add it to your iCloud now.</p>
+						<a href="javascript: Refer.onClickAddCredit()" target="_blank" id="add-credit-button" class="button special">Add Credit to iCloud</a>
+					</dialog>
 
 					<a href="javascript: toggleMute('#banner-mute');" id="banner-mute" mutee="#banner-vid" class="mute sound-on"></a>
 					<a href="#details" class="goto-next scrolly">Next</a>

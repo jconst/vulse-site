@@ -1,6 +1,7 @@
 "use strict";
 
 var Refer = (function() {
+  var appDownloadLink = "https://itunes.apple.com/us/app/vulse/id1226345714?mt=8";
   var baseURL = "https://api.apple-cloudkit.com/database/1/iCloud.com.jconst.Vulse/development";
   var code;
   var redirectURL;
@@ -25,7 +26,20 @@ var Refer = (function() {
     return url;
   };
 
+  var succeeded = function() {
+    var button = $("#add-credit-button");
+    button.text("Download Vulse");
+    button.attr("href", appDownloadLink);
+    $("#refer-title").text("Success!");
+    $("#refer-body").text("Now just download Vulse to choose your free effect!");
+  }
+
   var createReferral = function(referrerId) {
+    if (ourId === referrerId) {
+      alert("It looks like you might've clicked your own referral link. Try to get your friends to click it instead!");
+      return;
+    }
+
     var url = buildURL("private/records/modify");  
     var data = JSON.stringify({
       operations: [{
@@ -49,7 +63,7 @@ var Refer = (function() {
       contentType: 'application/json',
       async: true,
       success: function(data) {
-        console.log(data);
+        succeeded();
       },
       error: function(req, name, error) {
         alert("Error while adding your credit to iCloud. Try refreshing the page.");
@@ -79,9 +93,9 @@ var Refer = (function() {
       contentType: 'application/json',
       async: true,
       success: function(data) {
-        if (data.records.length > 0) {
+        if (data.records.length == 0) {
           alert("Sorry! We couldn't find a user with that referral code. Ask your friend if they've changed their code.");
-          return
+          return;
         }
         var referrerId = data.records[0].recordName;
         createReferral(referrerId);

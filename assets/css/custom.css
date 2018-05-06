@@ -120,24 +120,14 @@ html.inapp #download {
   font-weight: 600;
 }
 
-#referred-dialog .button {
+#add-credit-button {
   line-height: 2.5em;
   height: 2.5em;
   border-radius: 8px;
 }
 
-.icloud-button {
-  text-align: center;
-  margin: 0 auto;
-  width: 10em;
-}
-
-#apple-sign-in-button {
-  display: block;
-}
-
 dialog[open] {
-  animation: show 0.5s ease normal;
+  animation: show 0.6s ease normal;
 }
 @keyframes show{
   from {
