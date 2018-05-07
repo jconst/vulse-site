@@ -45,7 +45,7 @@ var Refer = (function() {
       operations: [{
         operationType: "forceUpdate",
         record: {
-          recordName: "1", //make sure new referrals replace old ones
+          recordName: "PendingReferral", //make sure new referrals replace old ones
           recordType: "PendingReferral",
           fields: {
             "referrer": { 
