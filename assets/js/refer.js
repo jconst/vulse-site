@@ -2,7 +2,7 @@
 
 var Refer = (function() {
   var appDownloadLink = "https://itunes.apple.com/us/app/vulse/id1226345714?mt=8";
-  var baseURL = "https://api.apple-cloudkit.com/database/1/iCloud.com.jconst.Vulse/development";
+  var baseURL = "https://api.apple-cloudkit.com/database/1/iCloud.com.jconst.Vulse/production";
   var code;
   var redirectURL;
   var ckSession;
@@ -10,8 +10,6 @@ var Refer = (function() {
 
   var init = function(referCode) {
     code = referCode;
-    console.log("logging code");
-    console.log(code);
   }
 
   var toVulseId = function(iCloudId) {
