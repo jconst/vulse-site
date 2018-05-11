@@ -17,7 +17,7 @@ var Refer = (function() {
   }
 
   var buildURL = function(endpoint) {
-    var url = `${baseURL}/${endpoint}?ckAPIToken=05a22b98755438c8165583a7a1f85757b794e1ddd6633b5be91e1e9c0829a51d`;
+    var url = `${baseURL}/${endpoint}?ckAPIToken=ce87966c9b43894b84bb2fc870cb2cfc982cf054074299f19ded606cbbbb3609`;
     if (ckSession) {
       url += `&ckSession=${encodeURIComponent(ckSession)}`;
     }
